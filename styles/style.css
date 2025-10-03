@@ -3,3 +3,41 @@
 @import url("normalize.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap') layer(init);
+
+@layer design{
+    :root{
+        color-scheme: light dark; /* Enable dark mode based on user preference. !light is main! */
+        --header-bg-color: light-dark(#3b3e40, #3b3e40);
+        --header-text-color: light-dark(#ffffff, #ffffff);
+        --primary-color: light-dark(#66d4d4,#448a8a);
+        --secondary-color: light-dark(#ffffff, #ffffff);
+        --text-color: light-dark(#000000, #ffffff);
+    }
+    html{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 100%; /*defaut 16px */
+        color: var(--text-color);
+    }
+    body{
+        background-color: var(--bg-color);
+        margin: 0;
+    }
+    .header{
+        background-image: url("../images/header-2560w.webp");
+        background-size: cover;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-color: var(--header-bg-color);
+        color: var(--header-text-color);
+        line-height: 1.5;
+    }
+    .header__nav{
+        text-align: center;
+    }
+    .header__link{
+        display: inline-block;
+        text-align: center;
+        padding-top: 1em;
+    }
+
+}
