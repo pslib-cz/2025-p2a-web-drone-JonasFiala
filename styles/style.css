@@ -83,8 +83,21 @@
     .text-box{
         padding: 1rem;
     }
+    .text-box-nopadding{
+        padding: 0;
+    }
     .text-box__title{
     }
+    .text-box__list-inline{
+        display: inline-block;
+    }
+    .text-box__list li{
+        margin-bottom: 1em;
+    }
+    .text-box__list li::marker{
+        color: var(--primary-color);
+    }
+    
     .heading{
         font: "Open Sans";
         display: block;
@@ -95,7 +108,6 @@
         font-size: 1.25rem;
         line-height: 125%;
         letter-spacing: 0%;
-        
     }
 
 }
