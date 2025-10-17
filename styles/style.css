@@ -36,6 +36,9 @@
         font-size: 4rem;
         font-weight: 800;
     }
+    section{
+        margin-top: 2rem;
+    }
 
     .header{
         background-image: url("../images/header-2560w.webp");
@@ -73,6 +76,9 @@
         text-decoration: none;
         
     }
+    .button:hover{
+        filter: brightness(90%);
+    }
     .button--light:hover{
         background-color: #ffffffe8;
     }
@@ -80,8 +86,14 @@
         background-color: var(--secondary-color);
         color: var(--text-color);
     }
+    .button--aqua{
+        background-color: var(--primary-color);
+        color: var(--header-text-color);
+        font-weight: 700;
+        font-style: Bold;
+    }
     .text-box{
-        padding: 1rem;
+        padding: 0 1rem 0;
     }
     .text-box-nopadding{
         padding: 0;
@@ -91,18 +103,28 @@
     .text-box__list-inline{
         display: inline-block;
     }
-    .text-box__list li{
+    .list_item{
         margin-bottom: 1em;
     }
-    .text-box__list li::marker{
+    .list_item--blue::marker{
         color: var(--primary-color);
     }
-    
+    .card{
+        display: inline-block;
+        width: 280px;
+        padding: 1em;
+    }
+    .card__h{
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 18px;
+}
     .heading{
         font: "Open Sans";
         display: block;
     }
     .heading__h3{
+        margin-top: 0;
         font-weight: 700;
         font-style: Bold;
         font-size: 1.25rem;
