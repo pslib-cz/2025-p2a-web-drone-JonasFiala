@@ -99,6 +99,10 @@
         padding: 0;
     }
     .text-box__title{
+
+    }
+    .text-box__title--center{
+        text-align: center;
     }
     .text-box__list-inline{
         display: inline-block;
@@ -109,12 +113,14 @@
     .list_item--blue::marker{
         color: var(--primary-color);
     }
-    .card{
+
+    .products__item{
+        vertical-align: top;
         display: inline-block;
         width: 280px;
         padding: 1em;
     }
-    .card__h{
+    .products__item__h{
         font-weight: 700;
         font-style: Bold;
         font-size: 18px;
@@ -130,6 +136,12 @@
         font-size: 1.25rem;
         line-height: 125%;
         letter-spacing: 0%;
+    }
+    .heading__big{
+        font-size: 3rem;
+    }
+    .heading__bigger{
+        font-size: 6rem;
     }
 
 }
